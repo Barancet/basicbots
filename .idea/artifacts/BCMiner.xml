@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BCMiner">
+    <output-path>$USER_HOME$/DreamBot/Scripts</output-path>
+    <root id="archive" name="BCMiner.jar">
+      <element id="module-output" name="BCMiner" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BCFighter/BCFighter.iml" filepath="$PROJECT_DIR$/BCFighter/BCFighter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BCMiner/BCMiner.iml" filepath="$PROJECT_DIR$/BCMiner/BCMiner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BCWoodcutanything/BCWoodcutanything.iml" filepath="$PROJECT_DIR$/BCWoodcutanything/BCWoodcutanything.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BCWoodcutter/BCWoodcutter.iml" filepath="$PROJECT_DIR$/BCWoodcutter/BCWoodcutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BotProject.iml" filepath="$PROJECT_DIR$/BotProject.iml" />
+    </modules>
+  </component>
+</project>
