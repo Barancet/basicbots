@@ -8,19 +8,14 @@ import org.dreambot.api.wrappers.interactive.GameObject;
 
 @ScriptManifest(author = "baran", category = Category.MINING, description = "Iron Mining", name = "BCMining", version = 1.0)
 public class Bminer extends AbstractScript {
-
     private int state;
     private String ore;
-
     private GameObject rock;
-
     private int count;
-
+    
     @Override
     public void onStart() {
-
         ore = "Tin ore";
-
         count = 0;
         state = 0;
     }
@@ -40,14 +35,12 @@ public class Bminer extends AbstractScript {
         super.onExit();
     }
 
-
 //    public void mineTin() {
 //        if (rock.getID() == (438)) {
 //            mine();
 //        }
 //
 //    }
-
     private void mine() {
         if (!getInventory().isFull()) {
             rock = getGameObjects().closest(f -> f.getName().contains("Rock"));
@@ -64,12 +57,9 @@ public class Bminer extends AbstractScript {
         }
     }
 
-
     private void drop() {
         if (getInventory().contains(ore)) {
             getInventory().dropAllExcept(i -> i.getName().contains("pickaxe"));
-
-
         }
         else{
             state = 0;
