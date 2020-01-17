@@ -9,12 +9,8 @@ import org.dreambot.api.script.ScriptManifest;
 import org.dreambot.api.wrappers.interactive.GameObject;
 import util.Wood;
 
-
 @ScriptManifest(author = "baran", category = Category.WOODCUTTING, description = "Pick Tree Cutter", name = "BCWoodcut", version = 1.0)
-
 public class Woodcutter extends AbstractScript {
-
-
     private int state = -1;
     private Wood currentLog;
     private boolean drop = false;
@@ -25,10 +21,6 @@ public class Woodcutter extends AbstractScript {
     public Woodcutter(){
         t = new Tile(3200, 3244);
     }
-
-
-
-
     @Override
     public int onLoop() {
         if (state == 0) {
@@ -53,8 +45,7 @@ public class Woodcutter extends AbstractScript {
         safeArea = new Area(3201, 3250, 3208, 3238);
         currentLog = Wood.NORMAL;
     }
-
-
+    
     private void cut() {
 //        if(getLocalPlayer().isInCombat()){
 //            getWalking().walk(safeArea.getRandomTile());
@@ -109,6 +100,5 @@ public class Woodcutter extends AbstractScript {
         } else {
             state = 0;
         }
-
     }
 }
