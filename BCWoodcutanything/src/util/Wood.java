@@ -5,17 +5,12 @@ public enum Wood {
     NORMAL("logs", "Tree");
     //OAK("Oak logs", "Oak");
     //, WILLOW, MAPLE, YEW, MAGIC;
-
     private String logName;
     private String treeName;
-
-
-
 
     Wood(String logName, String treeName){
         setLogName(logName);
         setTreeName(treeName);
-
     }
 
     public String getLogName() {
@@ -33,6 +28,4 @@ public enum Wood {
     public void setTreeName(String treeName) {
         this.treeName = treeName;
     }
-
-
 }
