@@ -41,7 +41,6 @@ public class Fighter extends AbstractScript {
     public void attackGoblin() {
         if (getLocalPlayer().isInCombat()) {
             //do nothing
-
         } else if (killArea.contains(getLocalPlayer())) {
             if (getEquipment().isSlotEmpty(EquipmentSlot.WEAPON.getSlot()) && getEquipment().isSlotEmpty(EquipmentSlot.AMULET.getSlot())) {
                 if (getInventory().contains(SWORD) && getInventory().contains(STR_AMMY)) {
