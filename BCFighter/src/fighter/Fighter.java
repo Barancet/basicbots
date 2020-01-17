@@ -11,17 +11,13 @@ import org.dreambot.api.wrappers.interactive.GameObject;
 import org.dreambot.api.wrappers.interactive.NPC;
 
 @ScriptManifest(author = "baran", category = Category.COMBAT, description = "GoblinSuicider", name = "BCFighter", version = 1.0)
-
 public class Fighter extends AbstractScript {
-
     private Area killArea;
     private int state;
-
     public static final String SWORD = "Iron scimitar";
     public static final String STR_AMMY = "Amulet of strength";
     public static final String GOBLIN = "Goblin";
     public static final Filter<NPC> GOBLIN_FILTER = npc -> npc != null && npc.getName().equals(GOBLIN) && !npc.isHealthBarVisible();
-
 
     public Fighter() {
         state = 0;
@@ -29,8 +25,6 @@ public class Fighter extends AbstractScript {
     }
 
     public void onStart() {
-
-
     }
 
     @Override
@@ -43,7 +37,6 @@ public class Fighter extends AbstractScript {
         }
         return Calculations.random(4000, 6000);
     }
-
 
     public void attackGoblin() {
         if (getLocalPlayer().isInCombat()) {
@@ -69,6 +62,5 @@ public class Fighter extends AbstractScript {
     }
 
     public void runToGoblins() {
-
     }
 }
